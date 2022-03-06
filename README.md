@@ -4,13 +4,13 @@
 
 Bookstore Web API Application aims to create a bookstore web service using Docker to give students the understanding to dockerization of an application. The application code is to be deployed as a RESTful web service with Flask using Dockerfile and Docker Compose on GitHub using Terraform.
 
-| HTTP Method  | Action                                                                    | Example                            |
-| --- |---------------------------------------------------------------------------|------------------------------------|
-| `GET`     | Retrieves list of all books                                               | http://localhost:8000/books        |
-| `GET`     | retrieves book with specific ISBN                                         | http://localhost:8000/books/1234-5 |
-| `POST`    | Insert a new book, from data provided with the request                    | http://localhost:8000/books        |
-| `PUT`     | Updates the book with a specified id, from data provided with the request | http://localhost:8000/books/123    |
-| `DELETE`  | Delete the book with a specified id                                       | http://localhost:8000/books/123    |
+| HTTP Method | Action                                                                    | Example                            |
+| ----------- |---------------------------------------------------------------------------|------------------------------------|
+| `GET`       | Retrieves list of all books                                               | http://localhost:8000/books        |
+| `GET`       | Retrieves book with specific id                                           | http://localhost:8000/books/123    |
+| `POST`      | Insert a new book, from data provided with the request                    | http://localhost:8000/books        |
+| `PUT`       | Updates the book with a specified id, from data provided with the request | http://localhost:8000/books/123    |
+| `DELETE`    | Delete the book with a specified id                                       | http://localhost:8000/books/123    |
 
 
 ## Project Skeleton
