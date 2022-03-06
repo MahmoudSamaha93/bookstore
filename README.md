@@ -6,11 +6,11 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 | HTTP Method  | Action                                                                    | Example                            |
 | --- |---------------------------------------------------------------------------|------------------------------------|
-| `GET`     | Retrieves list of all books                                               | http://localhost:5000/books        |
-| `GET`     | retrieves book with specific ISBN                                         | http://localhost:5000/books/1234-5 |
-| `POST`    | Insert a new book, from data provided with the request                    | http://localhost:5000/books        |
-| `PUT`     | Updates the book with a specified id, from data provided with the request | http://localhost:5000/books/123    |
-| `DELETE`  | Delete the book with a specified id                                       | http://localhost:5000/books/123    |
+| `GET`     | Retrieves list of all books                                               | http://localhost:8000/books        |
+| `GET`     | retrieves book with specific ISBN                                         | http://localhost:8000/books/1234-5 |
+| `POST`    | Insert a new book, from data provided with the request                    | http://localhost:8000/books        |
+| `PUT`     | Updates the book with a specified id, from data provided with the request | http://localhost:8000/books/123    |
+| `DELETE`  | Delete the book with a specified id                                       | http://localhost:8000/books/123    |
 
 
 ## Project Skeleton
