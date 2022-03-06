@@ -1,0 +1,5 @@
+flask
+flask-mysql
+pandas
+psycopg2-binary
+jinja2

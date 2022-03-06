@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  database:
+    image: mahmoudhsamaha/bookstore-db:latest
+    container_name: bookstore-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_USER: mhs
+      MYSQL_PASSWORD: M123456S
+      MYSQL_DATABASE: bookstore
+
+  api:
+    image: mahmoudhsamaha/bookstore-api:latest
+    container_name: bookstore-api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+
+  server:
+    image: mahmoudhsamaha/word-occurrences:latest
+    container_name: word-occurrences
+    build:
+      context: ./word_occurrences
+      dockerfile: ./Dockerfile
+    restart: always
+
+
+
